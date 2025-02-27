@@ -9,6 +9,8 @@
 ## 使用
 
 - 创建飞书应用，[参考文档](https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/Attendance/Development_Guide?lang=zh-CN)
+- 在飞书知识库下创建多维表格，并为该多维表格添加第一步中创建的应用
+- 在飞书多维表格中添加字段 Name（文本）、URL（超链接）、Description（文本）、Topics（多选）、Language（单选）、Star（整数）
 - Fork 当前仓库
 - 在仓库的设置页面添加环境变量
   - `FEISHU_APP_ID` 创建的飞书应用的 App ID
