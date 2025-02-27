@@ -7,10 +7,9 @@ class Feishu:
     access_token = ""
 
     def __init__(self):
-        self.access_token = self.get_access_token()
         self.app_id = os.environ.get("FEISHU_APP_ID")
         self.app_secret = os.environ.get("FEISHU_APP_SECRET")
-        print(self.app_id)
+        self.access_token = self.get_access_token()
         return
 
     def get_access_token(self):
