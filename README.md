@@ -5,3 +5,7 @@
 ## 功能
 
 支持使用 Github Actions 定时同步增量的 star 到飞书
+
+# 参考
+
+https://github.com/lcjnil/github-notion-star
