@@ -43,7 +43,7 @@ class Table:
     def get_all_names_with(self, filed_name):
         names = []
         for record in self.records:
-            names.append(record.fields[filed_name]["text"])
+            names.append(record.fields[filed_name][0]["text"])
         return names
     
     def insert_record(self, data):
