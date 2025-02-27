@@ -10,6 +10,8 @@ class Feishu:
         self.access_token = self.get_access_token()
         self.app_id = os.environ.get("FEISHU_APP_ID")
         self.app_secret = os.environ.get("FEISHU_APP_SECRET")
+        print(self.app_id)
+        return
 
     def get_access_token(self):
         url = "https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal/"
