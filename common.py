@@ -16,10 +16,10 @@ def get_obj_token(node_token):
     obj_token = r.json()["data"]["node"]["obj_token"]
     return obj_token
 
-def get_add_records(starred_repos, records):
+def get_add_records(starred_repos, existed_names):
     records = []
     for repo in starred_repos:
-        if repo.name not in records:
+        if repo.name not in existed_names:
             records.append({
                 "fields": {
                     "Name": repo.name,
