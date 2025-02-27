@@ -6,7 +6,7 @@ import common
 def main():
     env_node_token = os.environ.get("FEISHU_NODE_TOKEN")
     env_table_id = os.environ.get("FEISHU_TABLE_ID")
-    env_github_token = os.environ.get("GITHUB_TOKEN")
+    env_github_token = os.environ.get("TOKEN_GITHUB")
     feishu_table = table.Table(env_node_token, env_table_id)
     feishu_table.request_all_records()
     existed_names = feishu_table.get_all_names_with("Name")
